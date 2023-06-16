@@ -2,13 +2,19 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <math.h>
+#include <assert.h>
+#include <string.h>
 
 #define POPSIZE 1000000LU
 #define SSIZE 1000LU
 #define NSAMPLES 2000LU
-#define TVAL 1.962L
+#define DEFAULT_TVAL 1.962L
 
-int main(void) {
+int main(int argc, char* argv[]) {
+
+    // If arguments are passed, only one can be passed.
+    if (argc != 1) assert(argc == 2);
+    const long double T = (argc == 2) ? strtold(argv[1], NULL) : DEFAULT_TVAL;
 
     // Population
     int rands[POPSIZE];
@@ -36,12 +42,12 @@ int main(void) {
     long double moerr = 0.0;
 
     for (uint64_t i = 0; i < NSAMPLES; ++i) {
-        moerr = (TVAL * sstdvs[i] / sqrtl(SSIZE));
+        moerr = (T * sstdvs[i] / sqrtl(SSIZE));
         ncoverages += ((smeans[i] - moerr) <= pop_mean && ((smeans[i] + moerr) >= pop_mean));
     }
 
-    printf_s("%.2Lf %% of the confidence intervals contained the population mean!\n",
-        ((long double) ncoverages) / NSAMPLES * 100);
+    printf_s("%.2Lf %% of the confidence intervals contained the population mean (t = %.5Lf)!\n",
+        ((long double) ncoverages) / NSAMPLES * 100, T);
 
     return 0;
 }
