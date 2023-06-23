@@ -56,4 +56,4 @@
 
 - But if the population is far from being normal (stringly skewed or have strong tails), then CLT won't be valid unless we make a sufficiently larger samples $n \approx 50$.
 
-- When we can justify the use of CLT, we can take K to be $1 - (1 - \alpha) / 2$ quantile of the normal distribution. In other words, if we consider 95% confidence intervals, significance $\alpha = 0.05$, so K is the 1 - {(1 - 0.05) / 2} quantile of a normal distribution. This leads to setting the K to 1.96 to get a 95% coverage probability.
+- When we can justify the use of CLT, we can take K to be $1 - \frac{(1 - \alpha)}{2}$ quantile of the normal distribution. In other words, if we consider 95% confidence intervals, $\alpha = 0.95$, so K is the $1 - \frac{(1 - 0.95)}{2}^{th}$ $ = (1 - 0.025)^{th} = 0.975^{th}$ quantile of a normal distribution. This leads to setting the K to 1.96 to get a 95% coverage probability.
