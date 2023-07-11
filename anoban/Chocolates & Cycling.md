@@ -38,8 +38,6 @@ __A crossover design is a repeated measurements design such that each subject re
 
 - Crossover design mitigates this problem, because technically, every participant in the larger participants sample will take part in each one of the treatment. Which makes the constributions of each participant's unique characteristics in contriving the results equally likely in both treatment setups. i.e When a person with a certain set of psyological traits and lifestyle part takes in two of the studies, the influence of their individuality is more/less equally felt by both the experimental setups, skewing the results in both setups symmetrically.
 
-- Since we have an extremely small sample, (n = 9), we run a great risk of such biases, because the size of our sample is too small to adequately represent the larger population of cyclists. This already weakens the credibility of our study. Have we partitioned these 9 participants into two distinct test groups, that do not cross-over, we further increase the risk of biases and making the sample sizes even smaller!. So, cross-over design helps us here too.
-
 -------------------------
 
 ## ___Confidence Intervals:___
@@ -47,6 +45,12 @@ __A crossover design is a repeated measurements design such that each subject re
 
 - A 95% confidence interval means that if we are to take 100 samples of the same size (n = 9), repeatedly from the parent population, the confidence intervals computed using 95 of them will cover the true population metric.
 
-- Considering the confidence intervals from the Dark and White chocolates, both of them show a positive range (none of them include 0.0). This suggests that both chocolates improved the performance of cyclists, significantly, as the Null hypothesis gets rejected. This is reinfirced by the p values produced by hypothesis testing. p value for the Dark chocolates is 0.001 and White chocolates is 0.003, both of which are lesser than a 0.05 significance.
+- Considering the confidence interval for Dark chocolate over the baseline, both LCB and UCB are positive values. This suggests that Dark chocolate indeed improved the performance of cyclists, significantly, as the Null hypothesis gets rejected by the confidence interval failing to cover 0.0. In addition to this, the LCB is a fairly large distance (165m), which implies that the improvement caused by the consumption of Dark chocolates over the negative control is quite large. The UCB is at 314m, which hints a substantial increase. This is reinforced by the p value produced by hypothesis testing. p value for the Dark chocolates over baseline is 0.001 which is smaller than the significance level of 5% (0.05 significance). Which too insinuates the rejection of Null hypothesis.
 
-- However the lower and upper confidence bounds of the two confidence intervals give us an important insight. The difference between the LCB and UCB is quite large for White chocolate (292m - 82m = 210m) compared to Dark chocolates (314m - 165m = 149m). In essence, the improvements produced by Dark choclates seems more consistent compared to the ones produced by White chocolates. This is further supported by Dark chocolates having a lower standard deviation (158m) compared to White chocolates (248m).
+- When comparing the effects of the two chocolates on the cyclists, both the LCB and UCB turn to be positive values, consequently the confidence interval does not include 0.0. So, there is indeed a significant performance improvement caused by consuming Dark chocolates instead of White chocloates. This is further supported by a less than 0.05 p value, from hypothesis testing. However, the situation here isn't as polarized as the comparison of Dark chocolates to the baseline. The LCB in this test is 82m (roughly half the LCB of the previous comparison). And the range of this confidence interval (292 - 82 = 210) is quite wide compared to the previous one (314 - 165 = 149). Regardless, Dark chocolates do cause more performance improvement compared to White chocolates.
+
+- Based on these analyses, I recommend supplementing the cyclists' diet with chocolates. Among them, Dark chocolates are likely to cause more performance improvements over White chocolates. Dark chocolates must be given preference whenever possible, if that's not an option, white alternatives could be consumed.
+-------------------------------
+The data used in this study comes from: R. K.; Brouner, J.; Spendiff, O. Journal of the International Society of Sports Nutrition. 2015 12:47.
+
+--------------------------
